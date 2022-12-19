@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <!-- <label for="first-name">Name</label>
+      <input id="first-name" name="first-name" type="text" /> -->
+
+      <!-- placeholder, pattern, pattern, minlength, maxlength -->
+
+      <fieldset>
+        <label>
+          Name
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your Name"
+            pattern="[A-Z][a-z]{1,19}"
+            minlength="2"
+            maxlength="10"
+            value=""
+            autofocus
+            required
+          />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="pass" />
+        </label>
+
+        <label>
+          URL
+          <input type="url" name="url" />
+        </label>
+
+        <label>
+          Phon
+          <input
+            type="tel"
+            name="tel"
+            autocomplete
+            placeholder="+380556663321"
+            value="+380"
+          />
+        </label>
+
+        <label>
+          Search
+          <input type="search" name="search" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Number inputs</legend>
+        <!-- min, max, step -->
+        <label>
+          Quantity
+          <input type="number" name="quantity" min="1" max="5" step="2" />
+        </label>
+        <label>
+          Volum
+          <input type="range" name="volum" min="1" max="5" step="2" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data inputs</legend>
+        <!-- min, max, step -->
+        <label>
+          <span>Data</span>
+          <input type="date" name="data" />
+        </label>
+        <label>
+          <span>Datatime</span>
+          <input type="datetime-local" name="datetime" />
+        </label>
+        <label>
+          <span>Time</span>
+          <input type="time" name="time" />
+        </label>
+        <label>
+          <span>Month</span>
+          <input type="month" name="month" />
+        </label>
+        <label>
+          <span>Week</span>
+          <input type="week" name="week" />
+        </label>
+      </fieldset>
+
+      <label>File(s)<input type="file" name="user-foto" multiple /></label>
+
+      <label></label><input type="color" name="color" /></label>
+
+
+  Gender
+  <label><input name="gender" type="radio" value="Male">Male</label>
+  <label><input name="gender" type="radio" value="Femail">Femail</label>
+  <label><input name="gender" type="radio" value="Other" checked>Other</label>
+  
+<fieldset><legend>Prefs:</legend>
+<label><input type="checkbox" name="prefs" value="pets">Pets</label>
+<label><input type="checkbox" name="prefs" value="cars">Cars</label>
+<label><input type="checkbox" name="prefs" value="tech">Tech</label>
+</fieldset>
+
+
+      <!-- Кнопки -->
+        <!-- <input type="hidden" value="Ukraine" name="country">
+        <input type="button" value="Button">
+        <input type="image" src="https://i.pinimg.com/originals/a9/3c/b4/a93cb4e0316ef9c4db83846550ff4deb.jpg" alt=""> -->
+
+      <button type="submit">Send</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
